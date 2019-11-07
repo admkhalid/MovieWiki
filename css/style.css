@@ -64,3 +64,8 @@ a {
     width: 90%;
   }
 }
+@media (max-width: 1000px) {
+  #op {
+    grid-template-columns: 50% 50%;
+  }
+}
