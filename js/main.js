@@ -3,7 +3,7 @@ document.getElementById("search").addEventListener("click", search);
 function search(e) {
   e.preventDefault();
   let s = document.getElementById("term").value;
-  fetch("http://www.omdbapi.com/?s=" + s + "&apikey=47f58f6a")
+  fetch("https://www.omdbapi.com/?s=" + s + "&apikey=47f58f6a")
     .then(res => res.json())
     .then(data => {
       console.log(data.Search);
@@ -24,7 +24,7 @@ function search(e) {
 //   document.getElementsByClassName('movie').addEventListener('click', details);
 function details(id) {
   // let s = document.getElementById("term").value;
-  fetch("http://www.omdbapi.com/?i=" + id + "&apikey=47f58f6a")
+  fetch("https://www.omdbapi.com/?i=" + id + "&apikey=47f58f6a")
     .then(res => res.json())
     .then(data => {
       console.log(data);
