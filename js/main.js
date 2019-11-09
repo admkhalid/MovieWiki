@@ -1,4 +1,4 @@
-document.getElementById("search").addEventListener("click", search);
+document.getElementById("form").addEventListener("submit", search);
 
 function search(e) {
   e.preventDefault();
